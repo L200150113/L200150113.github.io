@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+        align-items: center;
+       }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Tugas 1</h1>
+    <hr>
+    <h3 style="text-align: center">Ismi Kamelia Najib Putri</h1>
+    <h4 style="text-align: center">L200150113</h1>
+    <h6 style="text-align: center"></h1>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -8.843783, lng: 121.663192};  
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 9.5,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSRZvO8AE-16OCLMvrDHh9UhelE7joUPk&callback=initMap">
+    </script>
+  </body>
+</html>
